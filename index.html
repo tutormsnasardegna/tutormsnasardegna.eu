@@ -11,6 +11,25 @@
     body { font-family: 'Nunito', sans-serif; }
     .logo { max-height: 330px; }
   </style>
+  <script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    palette: {
+      popup: { background: "#000" },
+      button: { background: "#F9B233", text: "#000" }
+    },
+    theme: "classic",
+    content: {
+      message: "Questo sito utilizza cookie tecnici e di terze parti (es. YouTube).",
+      dismiss: "OK",
+      link: "Maggiori info",
+      href: "/privacy.html"
+    }
+  });
+});
+</script>
 </head>
 <body class="bg-white text-gray-800">
 
